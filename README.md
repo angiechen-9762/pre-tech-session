@@ -1,1 +1,1 @@
-# pre-tech-session-python-0615
+# pre-tech-session
