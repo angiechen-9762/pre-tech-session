@@ -71,7 +71,7 @@ SELECT avg(pallets) FROM shipments WHERE Mode='LTL' and Weight<=500;
 /*
 7.	We want to get an idea of how many shipments are sent each month. Use SQL to count the number of shipments by year-month. 
 	Note that by year-month, we mean that May 2013 and May 2014 should be considered as different year-months. 
-    The resulting table should show year-month and count, and order results by year-month.
+    	The resulting table should show year-month and count, and order results by year-month.
 */
 SELECT date_format(`Ship Date`,'%Y-%m') yr_m, count(*) FROM shipments
 GROUP BY yr_m
