@@ -32,9 +32,11 @@ gap$country <- as.character(gap$country)
 1783 %% 23
 
 
+
 ### 2. Install and load the ggthemes package
 install.packages('ggthemes')
 library('ggthemes')
+
 
 
 ### 3. Using a loop of your choice, perform the following actions
@@ -236,6 +238,7 @@ library('data.table')
 fwrite(worker_title, '/Users/angie/Desktop/worker_title_2.csv')
 
 
+
 ### BONUS: 
 ### The excel file BonusFile.csv contains a transformed version of the gap table 
   # from this assignment. Perform the necessary %>%  data manipulation to transform the 
@@ -265,6 +268,7 @@ str(gap_trans)
 # show difference
 gap_edit %>% 
   anti_join(gap_trans, by = 'country')
+
 
 
 ### DOUBLE BONUS: 
