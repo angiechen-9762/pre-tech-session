@@ -200,7 +200,7 @@ worker_title <- workers %>%
 
 ### 12. Calculate the number of unique Worker Title-Department combinations present in the data.
 worker_title %>% 
-  count_(c('Worker_Title', 'Department')) %>% 
+  count(Worker_Title, Department) %>% 
   nrow()
 
 
